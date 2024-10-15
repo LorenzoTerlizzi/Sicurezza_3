@@ -1,0 +1,24 @@
+- Creaziobne chiave privata
+    openssl genrsa -out (nome file).dat 2048
+
+- Creazione chiave pubblica
+    openssl rsa -in (nome file chiave privata).dat -out (nome file).pem -pubout -outform PEM
+    
+
+- Creazione hash di un file
+    openssl dgst -out (nome file).dat (file)
+
+
+- Cifratura con chiave simmetrica
+    openssl enc -aes-256-cbc -salt -in (file.txt) -out (nome file criptato) -k (chiave)
+
+- Decriptazione con chiave simmetrica
+    openssl enc -d -aes-256-cbc -in (file da decriptato) -out (nome file decriptato) -k (chiave)
+
+
+- Cifratura con chiave pubblica
+    openssl pkeyutl -encrypt -inkey (chiave pubblica) -pubin -in (file) -out (file criptato)
+
+- Decriptazione con chiave privata
+    openssl pkeyutl -decrypt -inkey (chiave privata) -in (file da decriptare) -out (file decriptato)
+
