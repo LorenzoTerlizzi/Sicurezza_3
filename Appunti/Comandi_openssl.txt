@@ -22,3 +22,19 @@
 - Decriptazione con chiave privata
     openssl pkeyutl -decrypt -inkey (chiave privata) -in (file da decriptare) -out (file decriptato)
 
+Openssl - Uso
+
+Cosa è il PATH dei comandi?
+    - E' l'elenco dei PATH nel file system (separati da : sotto linux e mac e ;sotto windows)
+    nei quali l'interprete dei comandi
+
+Per esaminare:
+    - less ~/.profile
+
+Per eseguire un file eseguibile
+    - <path assoluto o relativo del file eseguibile>/<nome del file eseguibile>
+    - Lo stack e le chiamate a funzione
+    - Associato a un programma in esecuzione ci sono diverse <zone di memoria>
+        - La zona di memoria in cu ci sono le singole variabili chiamate nel codice sorgente
+        - La zona di memoria in cui ci sono le istruzioni da eseguire
+        
